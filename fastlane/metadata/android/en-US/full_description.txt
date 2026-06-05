@@ -1,0 +1,14 @@
+Hisap Kitap helps small shop owners manage daily business records from one app.
+
+Features:
+- Track product stock in and sales out
+- Record investments and expenses
+- Manage customer credit and payment records
+- Track cash, card, and UPI payment methods
+- Create invoices and PDF reports
+- Share invoices and reminders through WhatsApp
+- Generate UPI QR codes
+- Review low-stock alerts
+- View daily and monthly reports
+
+Data is stored locally on the device.
