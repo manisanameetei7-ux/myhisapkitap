@@ -1,0 +1,10 @@
+{
+  "name": "hisapkitap",
+  "description": "A shop ledger and billing app for small businesses with inventory, credit khata, invoices, and analytics.",
+  "requestFramePermissions": [
+    "camera"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

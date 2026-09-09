@@ -1,0 +1,73 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    color-scheme: dark;
+    --ink: #050608;
+    --ink-panel: #101419;
+    --ink-panel-alt: #161C23;
+    --ink-border: #26313B;
+    --ink-text: #F4F8FB;
+    --ink-muted: #A8B5C2;
+    --teal: #17D5B3;
+    --violet: #9B7CFF;
+    --amber: #FFC857;
+    --blue: #54B6FF;
+    --rose: #FF6F91;
+  }
+
+  body {
+    background-color: #050608;
+    color: #F4F8FB;
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  }
+}
+
+/* Print styles for invoices, reports and tutorial PDF manuals */
+@media print {
+  @page {
+    margin: 12mm 10mm 12mm 10mm;
+    size: auto;
+  }
+  body {
+    background: #ffffff !important;
+    color: #111827 !important;
+  }
+  .no-print, header, nav, footer {
+    display: none !important;
+  }
+  .print-only {
+    display: block !important;
+  }
+  .printable-card {
+    border: none !important;
+    box-shadow: none !important;
+    background: #ffffff !important;
+    color: #111827 !important;
+    padding: 0 !important;
+  }
+  .printable-card * {
+    color: #111827 !important;
+    background-color: transparent !important;
+    border-color: #e5e7eb !important;
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #050608;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #26313B;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #17D5B3;
+}
